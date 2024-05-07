@@ -1,11 +1,11 @@
 from typing import List
 from pathlib import Path
-from langchain_openai import ChatOpenAI, OpenAIEmbeddings
-from langchain.prompts import ChatPromptTemplate
-from langchain.schema import StrOutputParser
-from langchain_community.document_loaders import (
-    PyMuPDFLoader,
-)
+# import specific modules instead of entire packages
+from langchain_openai.modules import ChatOpenAI, OpenAIEmbeddings
+from langchain.prompts.templates import ChatPromptTemplate
+from langchain.schema.parsers import StrOutputParser
+from langchain_community.document_loaders import PyMuPDFLoader
+
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores.chroma import Chroma
 from langchain.indexes import SQLRecordManager, index
