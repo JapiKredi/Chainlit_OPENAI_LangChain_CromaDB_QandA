@@ -6,3 +6,6 @@ chromadb
 tiktoken
 pymupdf
 langchain_community
+chainlit
+langchain
+python-dotenv

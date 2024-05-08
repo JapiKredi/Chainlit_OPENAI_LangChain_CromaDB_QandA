@@ -15,14 +15,15 @@ from langchain.callbacks.base import BaseCallbackHandler
 
 import chainlit as cl
 
+from dotenv import load_dotenv
+load_dotenv()
 
 chunk_size = 1024
 chunk_overlap = 50
 
 embeddings_model = OpenAIEmbeddings()
 
-PDF_STORAGE_PATH = "/Users/jasper/Desktop/Chainlit_OPENAI_LangChain_CromaDB_QandA/pdfs"
-
+PDF_STORAGE_PATH = "./pdfs"
 
 
 print('all good')
